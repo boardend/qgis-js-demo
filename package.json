@@ -3,20 +3,34 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "slidev build",
+    "start": "npm run dev",
+    "build": "slidev build --base /qgis-js-demo/",
     "dev": "slidev --open",
     "export": "slidev export",
+    "preview": "vite preview --base /qgis-js-demo/",
     "update": "pnpm update"
   },
+  "slidev": {
+    "colorSchema": "light",
+    "defaults": {
+      "aspectRatio": "16/9",
+      "fonts": {
+        "sans": "Trueno",
+        "mono": "Fira Code"
+      }
+    }
+  },
   "dependencies": {
-    "qgis-js": "0.0.1",
     "@qgis-js/ol": "0.0.1",
     "@qgis-js/utils": "0.0.1",
-    "@slidev/cli": "^0.46.0",
+    "@slidev/cli": "^0.46.1",
+    "@slidev/client": "^0.46.1",
     "@slidev/theme-default": "latest",
-    "@slidev/theme-seriph": "latest"
+    "coi-serviceworker": "^0.1.7",
+    "qgis-js": "0.0.1"
   },
   "devDependencies": {
-    "pnpm": "8.12.1"
+    "pnpm": "8.12.1",
+    "vite": "^5.0.10"
   }
 }

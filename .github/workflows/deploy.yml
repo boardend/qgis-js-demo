@@ -30,7 +30,7 @@ jobs:
         run: npm install
 
       - name: Build
-        run: npm run build -- --base /qgis-js-demo/
+        run: npm run build
 
       - uses: actions/configure-pages@v3
 

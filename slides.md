@@ -1,6 +1,7 @@
 ---
-theme: default
-background: https://source.unsplash.com/collection/94734566/1920x1080
+theme: ./theme
+fonts:
+  provider: "none"
 class: text-center
 highlighter: shikiji
 lineNumbers: false
@@ -33,8 +34,6 @@ mdc: true
 The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
 -->
 
----
-transition: fade-out
 ---
 
 # What is Slidev?
@@ -76,10 +75,11 @@ Here is another comment.
 -->
 
 ---
-layout: default
----
+
+## layout: default
 
 # Table of contents
+
 
 ```html
 <Toc minDepth="1" maxDepth="1"></Toc>
@@ -88,8 +88,10 @@ layout: default
 <Toc maxDepth="1"></Toc>
 
 ---
+
 transition: slide-up
 level: 2
+
 ---
 
 # Navigation
@@ -98,25 +100,29 @@ Hover on the bottom-left corner to see the navigation's controls panel, [learn m
 
 ## Keyboard Shortcuts
 
-|     |     |
-| --- | --- |
-| <kbd>right</kbd> / <kbd>space</kbd>| next animation or slide |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd> | previous slide |
-| <kbd>down</kbd> | next slide |
+|                                                    |                             |
+| -------------------------------------------------- | --------------------------- |
+| <kbd>right</kbd> / <kbd>space</kbd>                | next animation or slide     |
+| <kbd>left</kbd> / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
+| <kbd>up</kbd>                                      | previous slide              |
+| <kbd>down</kbd>                                    | next slide                  |
 
 <!-- https://sli.dev/guide/animations.html#click-animations -->
+
 <img
   v-click
   class="absolute -bottom-9 -left-7 w-80 opacity-50"
   src="https://sli.dev/assets/arrow-bottom-left.svg"
   alt=""
 />
+
 <p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
 
 ---
+
 layout: image-right
 image: https://source.unsplash.com/collection/94734566/1920x1080
+
 ---
 
 # Code
@@ -127,24 +133,24 @@ Use code snippets and get the highlighting directly, and even types hover![^1]
 // TwoSlash enables TypeScript hover information and errors in markdown code blocks
 // Learn more at https://www.typescriptlang.org/dev/twoslash/
 function getUser(id: number): User {
-  return undefined as any
+  return undefined as any;
 }
 function saveUser(id: number, user: User) {
   // ...
 }
 // ---cut---
 interface User {
-  id: number
-  firstName: string
-  lastName: string
-  role: string
-// ^?
+  id: number;
+  firstName: string;
+  lastName: string;
+  role: string;
+  // ^?
 }
 
 function updateUser(id: number, update: User) {
-  const user = getUser(id)
-  const newUser = { ...user, ...update }
-  saveUser(id, newUser)
+  const user = getUser(id);
+  const newUser = { ...user, ...update };
+  saveUser(id, newUser);
 }
 ```
 
@@ -187,11 +193,7 @@ Check out [the guides](https://sli.dev/builtin/components.html) for more.
 </div>
 <div>
 
-```html
-<Tweet id="1390115482657726468" />
-```
-
-<Tweet id="1390115482657726468" scale="0.65" />
+Nope
 
 </div>
 </div>
@@ -207,51 +209,21 @@ Also, HTML elements are valid:
 -->
 
 ---
-class: px-20
----
 
-# Themes
+## class: px-20
 
-Slidev comes with powerful theming support. Themes can provide styles, layouts, components, or even configurations for tools. Switching between themes by just **one edit** in your frontmatter:
-
-<div grid="~ cols-2 gap-2" m="t-2">
-
-```yaml
----
-theme: default
----
-```
-
-```yaml
----
-theme: seriph
----
-```
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-default/01.png?raw=true" alt="">
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-seriph/01.png?raw=true" alt="">
-
-</div>
-
-Read more about [How to use a theme](https://sli.dev/themes/use.html) and
-check out the [Awesome Themes Gallery](https://sli.dev/themes/gallery.html).
+test
 
 ---
-preload: false
----
+
+## preload: false
 
 # Animations
 
 Animations are powered by [@vueuse/motion](https://motion.vueuse.org/).
 
 ```html
-<div
-  v-motion
-  :initial="{ x: -80 }"
-  :enter="{ x: 0 }">
-  Slidev
-</div>
+<div v-motion :initial="{ x: -80 }" :enter="{ x: 0 }">Slidev</div>
 ```
 
 <div class="w-60 relative mt-6">
@@ -327,7 +299,9 @@ LaTeX is supported out-of-box powered by [KaTeX](https://katex.org/).
 Inline $\sqrt{3x-1}+(1+x)^2$
 
 Block
-$$ {1|3|all}
+
+$$
+{1|3|all}
 \begin{array}{c}
 
 \nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &
@@ -423,13 +397,17 @@ database "MySql" {
 [Learn More](https://sli.dev/guide/syntax.html#diagrams)
 
 ---
+
 src: ./pages/multiple-entries.md
 hide: false
+
 ---
 
 ---
+
 layout: center
 class: text-center
+
 ---
 
 # Learn More
