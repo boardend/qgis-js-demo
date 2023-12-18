@@ -1,31 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="https://cdn.jsdelivr.net/gh/slidevjs/slidev/assets/favicon.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://cdn.jsdelivr.net/gh/slidevjs/slidev/assets/favicon.png"
+    />
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+      if (window["SharedArrayBuffer"] === undefined) {
+        console.log("Installing COOP/COEP service worker");
 
-</head>
-<body>
-  <div id="app"></div>
-  <script type="module" src="/@fs/home/boardend/dev/git/qgis-js-demo/node_modules/.pnpm/@slidev+client@0.46.1_postcss@8.4.32_typescript@5.3.3_vite@5.0.10/node_modules/@slidev/client/main.ts"></script>
-  
-<script>
-    if (window["SharedArrayBuffer"] === undefined) {
-      console.log("Installing COOP/COEP service worker");
+        window.coi = {
+          shouldRegister: () => true,
+          shouldDeregister: () => true,
+          coepCredentialless: () => !(window.chrome || window.netscape),
+          quiet: true,
+        };
 
-      window.coi = {
-        shouldRegister: () => true,
-        shouldDeregister: () => true,
-        coepCredentialless: () => !(window.chrome || window.netscape),
-        quiet: true,
-      };
-
-      const coiServiceworker = document.createElement("script");
-      coiServiceworker.setAttribute("src", "coi-serviceworker.min.js");
-      document.head.appendChild(coiServiceworker);
-    }
-  </script>
-<script async src="https://platform.twitter.com/widgets.js"></script>
-</body>
+        const coiServiceworker = document.createElement("script");
+        coiServiceworker.setAttribute("src", "coi-serviceworker.min.js");
+        document.head.appendChild(coiServiceworker);
+      }
+    </script>
+  </body>
 </html>
