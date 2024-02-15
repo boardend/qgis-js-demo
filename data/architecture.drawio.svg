@@ -1,0 +1,50 @@
+<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="311px" height="61px" viewBox="-0.5 -0.5 311 61" content="&lt;mxfile&gt;&lt;diagram id=&quot;WB9S0zAHrTMY9PH-NhTY&quot; name=&quot;Page-1&quot;&gt;xVVNb5wwEP01SOkhEuBCmmN3k6Y59FDtoWcHHGPF2NR4A/TXd/yJ2W3UKIfkstjvzYxnnh9shvb9fKfw0P2QLeFZmbdzhm6ysrzKS/g1wOKAGl05gCrWOqhYgQP7QzyYe/TIWjJuArWUXLNhCzZSCNLoDYaVktM27FHy7akDpuQMODSYn6O/WKs7h36p8hX/ThjtwslF7pkeh2APjB1u5ZRA6DZDeyWldqt+3hNutAu6uLxvL7CxMUWEfk2Cv4hnzI9+tudmeKK+Ob2EiZU8ipaYpDxDu6ljmhwG3Bh2gisGrNM9h10BS1+TKE3mF/sq4rTgEiJ7otUCIT7hc+0F8g4prv1+WvUugohdonXIw/6KaSy9qgALL8S/RUFnovy8uz9kZY17M6l4GAc7Zc3h0N04YLERq/59NNe3aySXKkNfgVT0AV9AZ3B0fvL4ZEuBB4W+fMQ944tL6aWQo5M48qN9EwybD7PDQWJ9iTmjwhGjxkq77nwbsKLuWZ2+kRXMb1Drt7gLelRWEUBuzNqIXRldKpDxf7FFjA13/qYy5VrGXUZkvEsD68SPbHCrAcx5G8ca0HrW4Na1BinsNjnPufc1E0UqDrP6uTKOjpHW1aHMklS4TnDn8JVLFAtOj2RaDxwfcZo0cKq13UbBU3BrAx935hfneniHnPGDuT74gwF/Ku/2wci8VCuXiIRu/wI=&lt;/diagram&gt;&lt;/mxfile&gt;">
+    <defs/>
+    <g>
+        <rect x="190" y="0" width="120" height="60" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 30px; margin-left: 191px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                vcpkg
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="250" y="34" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    vcpkg
+                </text>
+            </switch>
+        </g>
+        <rect x="0" y="0" width="120" height="60" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 30px; margin-left: 1px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                QGIS
+                                <span style="color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start;">
+                                    %3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22vcpkg%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22460%22%20y%3D%22190%22%20width%3D%22120%22%20height%3D%2260%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="60" y="34" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    QGIS %3CmxGraphModel...
+                </text>
+            </switch>
+        </g>
+    </g>
+    <switch>
+        <g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/>
+        <a transform="translate(0,-5)" xlink:href="https://www.diagrams.net/doc/faq/svg-export-text-problems" target="_blank">
+            <text text-anchor="middle" font-size="10px" x="50%" y="100%">
+                Text is not SVG - cannot display
+            </text>
+        </a>
+    </switch>
+</svg>

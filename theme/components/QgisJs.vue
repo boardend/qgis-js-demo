@@ -98,7 +98,7 @@ onMounted(async () => {
 
   // fetch demo project and upload it to the runtime
   const source = "qgis-js-demo-project";
-  const files = ["project.qgs", "data.gpkg"];
+  const files = ["project.qgz", "data.gpkg"];
   for (const file of files) {
     const url = `${source}/${file}`;
     const response = await fetch(url);
@@ -124,6 +124,7 @@ onMounted(async () => {
 
   useGeographic();
   const ol = new OlMap({
+    pixelRatio: 2,
     target: map.value! as HTMLDivElement,
     layers: [
       new ImageLayer({
@@ -134,7 +135,7 @@ onMounted(async () => {
     ],
     view: new View({
       center: cities[0].coords,
-      zoom: 5,
+      zoom: 15,
       projection,
     }),
   });
@@ -144,6 +145,10 @@ onMounted(async () => {
 </script>
 
 <style scoped>
+.qgis {
+  opacity: 1;
+}
+
 .qgis,
 .map {
   position: absolute;
