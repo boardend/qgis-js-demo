@@ -27,7 +27,7 @@ jobs:
           node-version: 'lts/*'
 
       - name: Install dependencies
-        run: npx pnpm install
+        run: npx pnpm install -r
 
       - name: Build
         run: npm run build
