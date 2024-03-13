@@ -27,26 +27,54 @@ import { Map as OlMap, View } from "ol";
 import ImageLayer from "ol/layer/Image";
 import Projection from "ol/proj/Projection.js";
 
+import GeoJSON from "ol/format/GeoJSON.js";
+import { Vector as VectorSource } from "ol/source.js";
+import { Vector as VectorLayer } from "ol/layer.js";
+
 import { useGeographic } from "ol/proj.js";
 
-import { context, setRuntime, setMap } from "../../global-qgis";
-import { interactions } from "../../global-interactions";
+import { context, setRuntime, setMap, setExtents } from "../../global-qgis";
+import { interactions, globalInteractions } from "../../global-interactions";
 
-import { cities } from "../../data/cities"
+import { cities } from "../../data/cities";
 
 const map = ref(null);
+
+function prefix() {
+  return window.location.pathname.startsWith("/qgis-js-demo")
+    ? "/qgis-js-demo/"
+    : "/";
+}
+
+function project() {
+  return prefix() + "qgis-js-demo-project";
+}
 
 const lastPage = ref(null);
 watchEffect(() => {
   if (lastPage.value != $slidev.nav.currentPage) {
     if (lastPage.value) {
+      globalInteractions.forEach((interaction) => {
+        if (interaction.onLeave) {
+          interaction.onLeave(context(), lastPage.value);
+        }
+      });
+
       if (interactions.onLeave.has(lastPage.value)) {
-        interactions.onLeave.get(lastPage.value)!(context());
+        interactions.onLeave.get(lastPage.value)!(context(), lastPage.value);
       }
     }
     if ($slidev.nav.currentPage) {
+      globalInteractions.forEach((interaction) => {
+        if (interaction.onEnter) {
+          interaction.onEnter(context(), $slidev.nav.currentPage);
+        }
+      });
       if (interactions.onEnter.has($slidev.nav.currentPage)) {
-        interactions.onEnter.get($slidev.nav.currentPage)!(context());
+        interactions.onEnter.get($slidev.nav.currentPage)!(
+          context(),
+          $slidev.nav.currentPage,
+        );
       }
     }
   }
@@ -79,10 +107,7 @@ onMounted(async () => {
 
   // boot the runtime
   const runtime = await qgis({
-    prefix:
-      (window.location.pathname.startsWith("/qgis-js-demo")
-        ? "/qgis-js-demo/"
-        : "/") + "assets/wasm",
+    prefix: prefix() + "assets/wasm",
     onStatus: (status: string) => {
       onStatus(status);
     },
@@ -97,7 +122,7 @@ onMounted(async () => {
   fs.mkdir(uploadDir);
 
   // fetch demo project and upload it to the runtime
-  const source = "qgis-js-demo-project";
+  const source = project();
   const files = ["project.qgz", "data.gpkg"];
   for (const file of files) {
     const url = `${source}/${file}`;
@@ -122,23 +147,39 @@ onMounted(async () => {
     units: "m",
   });
 
+  const extents = new VectorSource({
+    url: project() + "/extents.json",
+    format: new GeoJSON(),
+  });
+
+  const vectorLayer = new VectorLayer({
+    source: extents,
+    style: {},
+  });
+
   useGeographic();
   const ol = new OlMap({
     pixelRatio: 2,
     target: map.value! as HTMLDivElement,
+    controls: [],
     layers: [
       new ImageLayer({
         source: new QgisCanvasDataSource(api, {
           projection,
         }),
       }),
+      vectorLayer,
     ],
     view: new View({
       center: cities[0].coords,
-      zoom: 15,
+      zoom: 5,
       projection,
     }),
   });
+
+  setExtents(extents);
+
+  console.log(extents);
 
   setMap(ol);
 });
@@ -156,6 +197,7 @@ onMounted(async () => {
   left: 0;
   right: 0;
   bottom: 0;
+  background-color: #2e4fb4;
 }
 
 #status {

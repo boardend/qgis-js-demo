@@ -44,10 +44,15 @@
   * {
     pointer-events: auto;
   }
+}
 
+.slidev-layout:not(.cover) {
+  /*
   *:hover {
     background-color: rgba(255, 255, 255, 0.33);
   }
+  */
+  background-color: rgba(255, 255, 255, 0.85);
 }
 
 .slidev-layout.cover,

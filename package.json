@@ -32,6 +32,8 @@
   },
   "devDependencies": {
     "pnpm": "8.12.1",
-    "vite": "^5.1.6"
+    "vite": "^5.1.6",
+    "prettier": "^3.2.5",
+    "prettier-plugin-slidev": "^1.0.5"
   }
 }

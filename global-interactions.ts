@@ -1,31 +1,59 @@
-import type { QgisContext } from "./global-qgis";
+import { QgisContext } from "./global-qgis";
 
 import { cities } from "./data/cities";
-
-export const interactions = {
-  onEnter: new Map<number, (QgisContext) => void>(),
-  onLeave: new Map<number, (QgisContext) => void>(),
-};
+import { c } from "vite/dist/node/types.d-FdqQ54oU";
 
 interface SlideInteractions {
-  onEnter?: (QgisContext) => void | ((QgisContext) => void)[];
-  onLeave?: (QgisContext) => void | ((QgisContext) => void)[];
+  onEnter?: (QgisContext, number) => void | ((QgisContext, number) => void)[];
+  onLeave?: (QgisContext, number) => void | ((QgisContext, number) => void)[];
 }
+
+export const interactions = {
+  onEnter: new Map<number, (QgisContext, number) => void>(),
+  onLeave: new Map<number, (QgisContext, number) => void>(),
+};
+
+export const globalInteractions: SlideInteractions[] = [
+  {
+    onEnter: ({ runtime, map, extents }, slide) => {
+      console.log("onEnter", slide);
+      // check and apply map theme for slide
+      if (runtime?.api) {
+        for (const mapTheme of runtime.api.mapThemes()) {
+          console.log(mapTheme);
+          const theme = mapTheme
+            .split(",")
+            .find((themeSlide) => themeSlide == slide);
+          if (theme) {
+            runtime.api.setMapTheme(mapTheme);
+            map.getLayers().forEach((layer) => {
+              console.log(layer);
+            });
+          }
+        }
+      }
+      // check and apply map extent for slide
+      if (extents) {
+        const slideFeature = extents
+          .getFeatures()
+          .find((f) => f.get("slide") == slide);
+        if (slideFeature) {
+          map.getView().fit(slideFeature.getGeometry().getExtent(), {
+            duration: 500,
+          });
+        }
+      }
+    },
+  },
+];
 
 const slides: { [key: number]: SlideInteractions } = {
   1: {
-    onEnter: ({ runtime, map }) => {
-      if (runtime?.api) {
-        runtime.api.mapLayers().forEach((layer) => {
-          console.log(layer);
-          //layer.visible = true;
-        });
-      }
-      // TODO redraw
+    onEnter: ({ map }) => {
       if (map) {
         map.getView().animate({
           center: cities[0].coords,
-          zoom: 16,
+          zoom: 5,
           duration: 500,
         });
       }
@@ -66,7 +94,7 @@ Object.fromEntries(
         },
       },
     ];
-  })
+  }),
 );
 
 /*

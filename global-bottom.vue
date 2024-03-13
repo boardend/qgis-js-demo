@@ -1,3 +1,3 @@
 <template>
-    <QgisJs />
+  <QgisJs />
 </template>

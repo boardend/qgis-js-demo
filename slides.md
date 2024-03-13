@@ -8,17 +8,18 @@ lineNumbers: false
 drawings:
   persist: false
 transition: slide-left
-title: qgis-js Demo
+title: qgis-js - QGIS im Browser dank WebAssembly
 mdc: true
 hideInToc: true
 ---
 
-# Welcome to a small [qgis-js](https://github.com/qgis/qgis-js) Demo with [Slidev](https://github.com/slidevjs/slidev)
-
-<div class="pt-12">
-  <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
-    Press Space for next page <carbon:arrow-right class="inline"/>
+<div class="pt-12 rounded-xl bg-white bg-opacity-85">
+<h1>QGIS im Browser dank WebAssembly</h1>
+  <span @click="$slidev.nav.next">
+    <h2 style="padding-bottom: 0.5em"><a>Andreas Neumann</a> &amp; <a>Michael Schmuki</a></h2>
+    <h3>FOSSGIS-Konferenz 2024 @ Hamburg</h3>
   </span>
+  <br /><br />
 </div>
 
 <div class="abs-br m-6 flex gap-2">
@@ -36,25 +37,90 @@ The last comment block of each slide will be treated as slide notes. It will be 
 -->
 
 ---
+layout: image-right
+image:
 hideInToc: true
 ---
 
-# What is qgis-js?
+# Inhalt
 
-QGIS core ported to WebAssembly to run it on the web platform 
+<Toc maxDepth="1"></Toc>
 
-- 📝 **TODO** - Come up with a good intro
+---
+title: Intro
+layout: image-left
+image:
+---
 
-<br>
-<br>
+### Alles begann in ’s-Hertogenbosch
+
+<br />
+
+<div v-click>
+  <p>
+    QGIS User Conference, April 2023
+  </p>
+<p>
+
+- Martin Dobias
+- Michael Schmuki
+- Andreas Neumann
+
+</p>
+  <img
+    class="absolute top-27"
+    style="width: 13.5rem; right: 0; margin-right: 29rem"
+    src="/data/qgis-ugm.webp"
+  />
+
+  <br />
+
+</div>
+
+<div v-click>
+  <p>
+  Machbarkeitsstudie für den <b>Atlas der Schweiz</b>
+  </p>
+<p>
+
+- Institut für Kartografie und Geoinformation
+  - ETH Zürich
+- Sommer & Herbst 2023
+
+</p>
+  <img
+    class="absolute bottom-17"
+    style="width: 13.5rem; right: 0; margin-right: 29rem"
+    src="/data/aos_logo_white.png"
+  />
+</div>
+
+---
+title: Was ist qgis-js?
+---
+
+# Was ist qgis-js?
+
+QGIS core ported to WebAssembly to run it on the web platform
 
 qgis-js repository on [GitHub?](https://github.com/qgis/qgis-js)
 
-<style>
-h1 {
-  color: #589632
-}
-</style>
+---
+title: WebAssembly
+---
+
+# Webassembly Intro
+
+---
+title: Architektur
+routeAlias: architektur
+---
+
+# Architektur
+
+## draw.io?
+
+<img src="/data/architecture.drawio.svg" style="margin: 1em" />
 
 ---
 hideInToc: true
@@ -97,11 +163,7 @@ routeAlias: architecture
 
 # Architecture
 
-
-
 ## draw.io?
-
-
 
 <img src="/data/architecture.drawio.svg" style="margin: 1em" />
 
@@ -133,7 +195,6 @@ routeAlias: slidev-demo
 
 # slidev starter slides form here:
 
-
 ---
 transition: slide-up
 level: 2
@@ -147,19 +208,21 @@ Hover on the bottom-left corner to see the navigation's controls panel, [learn m
 
 ### Keyboard Shortcuts
 
-|     |     |
-| --- | --- |
-| <kbd>right</kbd> / <kbd>space</kbd>| next animation or slide |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd> | previous slide |
-| <kbd>down</kbd> | next slide |
+|                                                    |                             |
+| -------------------------------------------------- | --------------------------- |
+| <kbd>right</kbd> / <kbd>space</kbd>                | next animation or slide     |
+| <kbd>left</kbd> / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
+| <kbd>up</kbd>                                      | previous slide              |
+| <kbd>down</kbd>                                    | next slide                  |
 
 <!-- https://sli.dev/guide/animations.html#click-animations -->
+
 <img
   v-click
   class="absolute -bottom-9 -left-7 w-80 opacity-50"
   src="https://sli.dev/assets/arrow-bottom-left.svg"
 />
+
 <p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
 
 ---
@@ -168,22 +231,23 @@ image: https://source.unsplash.com/collection/94734566/1920x1080
 routeAlias: slidev-code
 hideInToc: true
 ---
+
 # Code
 
 Use code snippets and get the highlighting directly![^1]
 
 ```ts {all|2|1-6|9|all}
 interface User {
-  id: number
-  firstName: string
-  lastName: string
-  role: string
+  id: number;
+  firstName: string;
+  lastName: string;
+  role: string;
 }
 
 function updateUser(id: number, update: User) {
-  const user = getUser(id)
-  const newUser = { ...user, ...update }
-  saveUser(id, newUser)
+  const user = getUser(id);
+  const newUser = { ...user, ...update };
+  saveUser(id, newUser);
 }
 ```
 
@@ -207,6 +271,7 @@ function updateUser(id: number, update: User) {
 routeAlias: slidev-components
 hideInToc: true
 ---
+
 # Components
 
 You can use Vue components directly inside your slides.
@@ -222,8 +287,6 @@ We have provided a few built-in components like `<Tweet/>` and `<Youtube/>` that
 
 Check out [the guides](https://sli.dev/builtin/components.html) for more.
 
-
-
 ---
 preload: false
 routeAlias: slidev-animations
@@ -235,12 +298,7 @@ hideInToc: true
 Animations are powered by [@vueuse/motion](https://motion.vueuse.org/).
 
 ```html
-<div
-  v-motion
-  :initial="{ x: -80 }"
-  :enter="{ x: 0 }">
-  Slidev
-</div>
+<div v-motion :initial="{ x: -80 }" :enter="{ x: 0 }">Slidev</div>
 ```
 
 <div class="w-60 relative mt-6">
@@ -316,6 +374,7 @@ LaTeX is supported out-of-box powered by [KaTeX](https://katex.org/).
 Inline $\sqrt{3x-1}+(1+x)^2$
 
 Block
+
 $$
 \begin{array}{c}
 
@@ -337,7 +396,6 @@ $$
 routeAlias: slidev-diagrams
 hideInToc: true
 ---
-
 
 # Diagrams
 
@@ -361,7 +419,6 @@ C -->|Two| E[Result 2]
 </div>
 
 [Learn More](https://sli.dev/guide/syntax.html#diagrams)
-
 
 ---
 routeAlias: slidev-learn-more

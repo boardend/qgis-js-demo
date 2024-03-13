@@ -12,7 +12,7 @@ export default defineConfig({
     target: "esnext",
   },
   optimizeDeps: {
-    exclude: ['public/projects']
+    exclude: ["public/projects"],
   },
   plugins: [
     {

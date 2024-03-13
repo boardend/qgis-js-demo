@@ -1,20 +1,25 @@
 import type { QgisRuntime } from "qgis-js";
 
-import type {Map} from "ol"
+import type { Map } from "ol";
 
-let runtime : QgisRuntime | undefined = undefined;
-let map : Map | undefined = undefined;
+import type { Vector as VectorSource } from "ol/source.js";
+
+let runtime: QgisRuntime | undefined = undefined;
+let map: Map | undefined = undefined;
+let extents: VectorSource | undefined = undefined;
 
 export interface QgisContext {
-    runtime?: QgisRuntime,
-    map?: Map
+  runtime?: QgisRuntime;
+  map?: Map;
+  extents?: VectorSource;
 }
 
-export function context() : QgisContext {
+export function context(): QgisContext {
   return {
     runtime,
-    map
-  }
+    map,
+    extents,
+  };
 }
 
 export function setRuntime(r: QgisRuntime) {
@@ -23,4 +28,8 @@ export function setRuntime(r: QgisRuntime) {
 
 export function setMap(m: Map) {
   map = m;
+}
+
+export function setExtents(e: VectorSource) {
+  extents = e;
 }
