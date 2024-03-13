@@ -24,14 +24,14 @@
     "qgis-js": "0.0.2",
     "@qgis-js/ol": "0.0.2",
     "@qgis-js/utils": "0.0.2",
-    "coi-serviceworker": "^0.1.7",
     "ol": "8.2.0",
     "@slidev/cli": "^0.46.3",
     "@slidev/client": "^0.46.3",
-    "@slidev/theme-default": "latest"
+    "@slidev/theme-default": "latest",
+    "coi-serviceworker": "^0.1.7"
   },
   "devDependencies": {
     "pnpm": "8.12.1",
-    "vite": "^5.1.3"
+    "vite": "^5.1.6"
   }
 }
