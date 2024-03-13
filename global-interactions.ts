@@ -16,27 +16,28 @@ export const interactions = {
 export const globalInteractions: SlideInteractions[] = [
   {
     onEnter: ({ runtime, map, extents }, slide) => {
-      console.log("onEnter", slide);
       // check and apply map theme for slide
       if (runtime?.api) {
         for (const mapTheme of runtime.api.mapThemes()) {
-          console.log(mapTheme);
           const theme = mapTheme
             .split(",")
             .find((themeSlide) => themeSlide == slide);
           if (theme) {
             runtime.api.setMapTheme(mapTheme);
-            map.getLayers().forEach((layer) => {
-              console.log(layer);
-            });
+            //FIXME update map source to trigger reload
           }
         }
       }
       // check and apply map extent for slide
       if (extents) {
-        const slideFeature = extents
-          .getFeatures()
-          .find((f) => f.get("slide") == slide);
+        const slideFeature = extents.getFeatures().find((f) => {
+          if (f.get("slide")) {
+            return ("" + f.get("slide"))
+              .split(",")
+              .some((slideFeature) => slideFeature == slide);
+          }
+          return false;
+        });
         if (slideFeature) {
           map.getView().fit(slideFeature.getGeometry().getExtent(), {
             duration: 500,
@@ -49,6 +50,17 @@ export const globalInteractions: SlideInteractions[] = [
 
 const slides: { [key: number]: SlideInteractions } = {
   1: {
+    onEnter: ({ map }) => {
+      if (map) {
+        map.getView().animate({
+          center: cities[0].coords,
+          zoom: 5,
+          duration: 500,
+        });
+      }
+    },
+  },
+  12: {
     onEnter: ({ map }) => {
       if (map) {
         map.getView().animate({

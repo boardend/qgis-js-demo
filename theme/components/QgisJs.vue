@@ -50,32 +50,36 @@ function project() {
   return prefix() + "qgis-js-demo-project";
 }
 
+function onEnter(slide: number) {
+  globalInteractions.forEach((interaction) => {
+    if (interaction.onEnter) {
+      interaction.onEnter(context(), slide);
+    }
+  });
+  if (interactions.onEnter.has(slide)) {
+    interactions.onEnter.get(slide)!(context(), slide);
+  }
+}
+
+function onLeave(slide: number) {
+  globalInteractions.forEach((interaction) => {
+    if (interaction.onLeave) {
+      interaction.onLeave(context(), slide);
+    }
+  });
+  if (interactions.onLeave.has(slide)) {
+    interactions.onLeave.get(slide)!(context(), slide);
+  }
+}
+
 const lastPage = ref(null);
 watchEffect(() => {
   if (lastPage.value != $slidev.nav.currentPage) {
     if (lastPage.value) {
-      globalInteractions.forEach((interaction) => {
-        if (interaction.onLeave) {
-          interaction.onLeave(context(), lastPage.value);
-        }
-      });
-
-      if (interactions.onLeave.has(lastPage.value)) {
-        interactions.onLeave.get(lastPage.value)!(context(), lastPage.value);
-      }
+      onLeave(lastPage.value);
     }
     if ($slidev.nav.currentPage) {
-      globalInteractions.forEach((interaction) => {
-        if (interaction.onEnter) {
-          interaction.onEnter(context(), $slidev.nav.currentPage);
-        }
-      });
-      if (interactions.onEnter.has($slidev.nav.currentPage)) {
-        interactions.onEnter.get($slidev.nav.currentPage)!(
-          context(),
-          $slidev.nav.currentPage,
-        );
-      }
+      onEnter($slidev.nav.currentPage);
     }
   }
   lastPage.value = $slidev.nav.currentPage;
@@ -123,7 +127,7 @@ onMounted(async () => {
 
   // fetch demo project and upload it to the runtime
   const source = project();
-  const files = ["project.qgz", "data.gpkg"];
+  const files = ["project.qgz", "data.gpkg", "map_modified.tif"];
   for (const file of files) {
     const url = `${source}/${file}`;
     const response = await fetch(url);
@@ -178,10 +182,13 @@ onMounted(async () => {
   });
 
   setExtents(extents);
-
-  console.log(extents);
-
   setMap(ol);
+
+  setTimeout(() => {
+    if ($slidev.nav.currentPage && $slidev.nav.currentPage != 1) {
+      onEnter($slidev.nav.currentPage);
+    }
+  }, 100);
 });
 </script>
 
