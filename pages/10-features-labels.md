@@ -9,6 +9,3 @@ hideInToc: true
 ### Labels
 
 <br />
-
-- TODO
-- TODO

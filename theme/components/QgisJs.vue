@@ -127,7 +127,7 @@ onMounted(async () => {
 
   // fetch demo project and upload it to the runtime
   const source = project();
-  const files = ["project.qgz", "data.gpkg", "map_modified.tif"];
+  const files = ["project.qgz", "data.gpkg", "map_georeferenced_clip.tif"];
   for (const file of files) {
     const url = `${source}/${file}`;
     const response = await fetch(url);

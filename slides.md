@@ -16,7 +16,7 @@ hideInToc: true
 <div class="pt-12 rounded-xl bg-white bg-opacity-85">
 <h1>QGIS im Browser dank WebAssembly</h1>
   <span @click="$slidev.nav.next">
-    <h2 style="padding-bottom: 0.5em"><a>Andreas Neumann</a> &amp; <a>Michael Schmuki</a></h2>
+    <h2 style="padding-bottom: 0.5em"><a href="https://github.com/boardend" target="_blank">Michael Schmuki</a> &amp; <a href="https://github.com/andreasneumann" target="_blank">Andreas Neumann</a></h2>
     <h3>FOSSGIS-Konferenz 2024 @ Hamburg</h3>
   </span>
   <br /><br />
