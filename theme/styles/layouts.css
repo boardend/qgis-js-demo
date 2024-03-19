@@ -1,5 +1,23 @@
 @import "../../node_modules/ol/ol.css";
 
+#slideshow,
+#slideshow > div,
+#slideshow > div div {
+  pointer-events: none;
+
+  * {
+    pointer-events: auto;
+  }
+}
+
+.slidev-page {
+  pointer-events: auto;
+
+  * {
+    pointer-events: auto;
+  }
+}
+
 .slidev-layout {
   h1 + p {
     @apply -mt-2 opacity-50 mb-4;
@@ -38,20 +56,9 @@
   h6:not(.opacity-100) {
     @apply opacity-40;
   }
-
-  pointer-events: none;
-
-  * {
-    pointer-events: auto;
-  }
 }
 
 .slidev-layout:not(.cover) {
-  /*
-  *:hover {
-    background-color: rgba(255, 255, 255, 0.33);
-  }
-  */
   background-color: rgba(255, 255, 255, 0.85);
 }
 

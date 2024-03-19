@@ -83,12 +83,40 @@ src: ./pages/11-features-diagrams.md
 ---
 
 ---
-routeAlias: slidev-learn-more
+src: ./pages/12-potential.md
+---
+
+---
+src: ./pages/13-limitation.md
+---
+
+---
+src: ./pages/14-licence.md
+---
+
+---
+src: ./pages/15-future.md
+---
+
+---
+routeAlias: thanks
 layout: center
 class: text-center
 hideInToc: true
 ---
 
-# Learn More
+# Vielen Dank für Ihre Aufmerksamkeit!
 
-[Documentations](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/showcases.html)
+<a href="https://github.com/boardend" target="_blank">Michael Schmuki</a> &amp; <a href="https://github.com/andreasneumann" target="_blank">Andreas Neumann</a>
+
+<br />
+
+**qgis-js** Website: [https://qgis.github.io/qgis-js](https://qgis.github.io/qgis-js/)
+
+**qgis-js** auf GitHub: [https://github.com/qgis/qgis-js](https://github.com/qgis/qgis-js)
+
+**qgis-js** auf npm: [https://www.npmjs.com/package/qgis-js](https://www.npmjs.com/package/qgis-js)
+
+<br /><br />
+
+**Interaktive Slides**: [https://boardend.github.io/qgis-js-demo](https://boardend.github.io/qgis-js-demo/)

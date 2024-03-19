@@ -90,7 +90,7 @@ onMounted(async () => {
 
   let isError = false;
   const onStatus = (status: string) => {
-    if (isError) return;
+    if (isError || !status) return;
     (statusControl.firstElementChild! as HTMLDivElement).innerHTML = status;
   };
   const onError = (error: Error | any) => {
@@ -106,6 +106,7 @@ onMounted(async () => {
     </div>`;
   };
   const onReady = () => {
+    statusControl.firstElementChild!.innerHTML = "";
     statusControl.style.display = "none";
   };
 
@@ -119,7 +120,7 @@ onMounted(async () => {
   setRuntime(runtime);
   const { api, fs } = runtime;
 
-  onStatus("Uploading project...");
+  onStatus("Downloading QGIS project...");
 
   // prepare the upload directory
   const uploadDir = "/upload";
@@ -217,5 +218,63 @@ onMounted(async () => {
 
 #status div {
   display: inline-block;
+}
+
+.lds-ellipsis {
+  opacity: 0.75;
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 1em;
+  margin-left: 0.5em;
+  padding-top: 0.25em;
+}
+.lds-ellipsis div {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: rgb(24, 24, 24);
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
 }
 </style>

@@ -10,5 +10,27 @@ hideInToc: true
 
 <br />
 
-- TODO
-- TODO
+- Darstellung von allen QGIS/OGR unterstützten Vektorformaten
+  - `.geojson`, `.gpkg`, `.shp`, ...
+
+<br />
+
+<div v-click>
+
+- QGIS Symbolisierung
+  - (SQL) Expressions
+  - Regelbasierte Darstellung
+
+</div>
+
+<br />
+
+<div v-click>
+
+- Interaktionen per qgis-js API
+  - Layer
+    - visibility
+    - opacity
+  - Map themes
+
+</div>
