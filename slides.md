@@ -23,10 +23,7 @@ hideInToc: true
 </div>
 
 <div class="abs-br m-6 flex gap-2">
-  <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon:edit />
-  </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" alt="GitHub" title="Open in GitHub"
+  <a href="https://github.com/boardend/qgis-js-demo" target="_blank" alt="GitHub" title="Open in GitHub"
     class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
     <carbon-logo-github />
   </a>
@@ -83,19 +80,23 @@ src: ./pages/11-features-diagrams.md
 ---
 
 ---
-src: ./pages/12-potential.md
+src: ./pages/12-demo.md
 ---
 
 ---
-src: ./pages/13-limitation.md
+src: ./pages/13-potential.md
 ---
 
 ---
-src: ./pages/14-licence.md
+src: ./pages/14-limitation.md
 ---
 
 ---
-src: ./pages/15-future.md
+src: ./pages/15-licence.md
+---
+
+---
+src: ./pages/16-future.md
 ---
 
 ---

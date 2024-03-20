@@ -1,6 +1,6 @@
 ---
 layout: image-left
-image:
+image: null
 title: Features - Vektordaten & Symbolisierung
 routeAlias: features-symbols
 hideInToc: true
@@ -27,10 +27,8 @@ hideInToc: true
 
 <div v-click>
 
-- Interaktionen per qgis-js API
-  - Layer
-    - visibility
-    - opacity
-  - Map themes
+- Symbolebenen und grafische Effekte
+- Trennung von logischen und physischen Layern (Zeichenreihenfolge)
 
 </div>
+

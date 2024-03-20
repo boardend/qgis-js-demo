@@ -1,6 +1,6 @@
 ---
 layout: image-right
-image:
+image: null
 title: Features - Raster
 routeAlias: features-rasters
 hideInToc: true
@@ -11,13 +11,16 @@ hideInToc: true
 <br />
 
 - Darstellung von allen in GDAL unterstützten Rasterformaten
-- Blending (Multiply, Darken, etc.)
-- Hillshading
 
 <br />
-<br />
-<br />
-<br />
+
+- Diverse Rendering-Effekte
+  - Blending (Multiply, Darken, etc.)
+  - Einfärbung, Kontrast, etc.
+- Selektive und globale Transparenz
+- Hillshading
+
+
 <br />
 <br />
 <br />
@@ -29,3 +32,4 @@ hideInToc: true
   - Public Domain, via Wikimedia Commons
 
 </small>
+

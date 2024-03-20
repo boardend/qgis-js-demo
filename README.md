@@ -1,6 +1,21 @@
-# Welcome to a small [qgis-js](https://github.com/qgis/qgis-js) Demo with [Slidev](https://github.com/slidevjs/slidev)
+# [qgis-js](https://github.com/qgis/qgis-js) - QGIS im Browser dank WebAssembly (DE)
 
-> This project is in the making. It's dangerous to go alone! Take this 🗡️
+> English: "[qgis-js](https://github.com/qgis/qgis-js) - QGIS in the browser thanks to WebAssembly"
+
+- **Talk @ [FOSSGIS 2024 - Hamburg](https://www.fossgis-konferenz.de/2024/)**
+  - 21.03.2024, 16:45–17:05 (Europe/Berlin)
+    - Hörsaal 2 (Ditze H016)
+  - <a href="https://github.com/boardend" target="_blank">Michael Schmuki</a> &amp; <a href="https://github.com/andreasneumann" target="_blank">Andreas Neumann</a>
+
+> **Video**: TBD
+
+> **Slides**: https://github.com/boardend/qgis-js-demo
+
+> **Session**: https://pretalx.com/fossgis2024/talk/NTFVWQ/
+
+## Abstract (DE)
+
+qgis-js ist eine Portierung von QGIS Core zu WebAssembly um es in modernen Browsern auszuführen. Dieses Setup ermöglicht die Integration von praktisch allen denkbaren Geo-Formaten und dynamische kartografische Darstellungen auf höchsten Niveau ganz ohne (QGIS-)Server. Im Rahmen des Vortrags werden die verwendeten Technologien sowie die Architektur kurz vorgestellt, um anschliessend die neuen Möglichkeiten und Integration anhand interaktiven Beispielen aufzuzeigen.
 
 ## Usage
 

@@ -60,7 +60,27 @@ const slides: { [key: number]: SlideInteractions } = {
       }
     },
   },
-  12: {
+
+  ...Object.fromEntries(
+    [13, 14, 15, 16, 17].map((i) => {
+      return [
+        i,
+        {
+          onEnter: ({ map }) => {
+            if (map) {
+              map.getView().animate({
+                center: cities[0].coords,
+                zoom: 5 - (i - 15),
+                duration: 500,
+              });
+            }
+          },
+        },
+      ];
+    }),
+  ),
+  /*
+  13: {
     onEnter: ({ map }) => {
       if (map) {
         map.getView().animate({
@@ -71,6 +91,7 @@ const slides: { [key: number]: SlideInteractions } = {
       }
     },
   },
+  */
 };
 
 Object.entries(slides).forEach(([slide, slideInteractions]) => {
