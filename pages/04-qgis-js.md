@@ -10,9 +10,9 @@ routeAlias: qgis-js
 
   - Laden von QGIS Projekten
   - Rendering von Karten (Projektion, Extent, Auflösung)
-  - Interkation mit Layern (Visibility, Opacity, ...) und Map-Themes
+  - Interaktion mit Layern (Visibility, Opacity, ...) und Map-Themes
 
-- OpenLayers Integration als seperates npm Packet
+- OpenLayers Integration als separates npm Package
 
 <br />
 

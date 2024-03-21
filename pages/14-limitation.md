@@ -13,12 +13,12 @@ routeAlias: limitation
 
 <div v-click>
 
-- Selektion und Attribut-Daten Abfragen von Features
-- Einbettung von zusätzlichen Schriftarten
-- Mobile Support noch nicht in allen Browsern
-- Blockierung vom JS "main" Thread
+- Noch nicht umgesetzt
+  - Selektion und Attribut-Daten Abfragen von Features
+  - Einbettung von zusätzlichen Schriftarten
+  - Mobile Support noch nicht in allen Browsern
+  - Blockierung vom JS "main" Thread
 
-  
 </div>
   
 <br />
@@ -29,4 +29,3 @@ routeAlias: limitation
   - Globale Variabeln nicht verfügbar (z.B. `@map_scale`)
 
 </div>
-
