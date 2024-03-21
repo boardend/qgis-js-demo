@@ -6,7 +6,7 @@ routeAlias: future
 # Aktuelle Arbeiten und Ausblick
 
 - Performance-Optimierung
-  - Reduzierung der Renderzeit
+  - Optimierung der Renderzeit
   - Progressives Rendering
 
 <br />
@@ -24,4 +24,3 @@ routeAlias: future
 
 - Contributions Welcome 😊
   - Fork us on [https://github.com/qgis/qgis-js](https://github.com/qgis/qgis-js)
-

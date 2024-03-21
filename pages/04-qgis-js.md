@@ -5,7 +5,7 @@ routeAlias: qgis-js
 
 # Was ist qgis-js?
 
-- QGIS Core portiert zu WebAssembly um es auf der Web-Platform zu nutzen
+- QGIS Core portiert zu WebAssembly, um es auf der Web-Platform zu nutzen
 - JavaScript/TypeScript API
 
   - Laden von QGIS Projekten

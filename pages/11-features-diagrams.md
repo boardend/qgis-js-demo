@@ -10,7 +10,7 @@ hideInToc: true
 
 <br />
 
-- Dynamische erzeugte Diagramme
+- Dynamisch erzeugte Diagramme
   - Aus Attributen der Geodaten
 - Unterstüzung von allen in QGIS verfügbaren Diagrammtypen
   - Welche zur Zeit erweitert werden
