@@ -7,7 +7,7 @@
     - Hörsaal 2 (Ditze H016)
   - <a href="https://github.com/boardend" target="_blank">Michael Schmuki</a> &amp; <a href="https://github.com/andreasneumann" target="_blank">Andreas Neumann</a>
 
-> **Video**: TBD
+> **Video**: https://media.ccc.de/v/fossgis2024-38328-qgis-js-qgis-im-browser-dank-webassembly
 
 > **Slides**: https://github.com/boardend/qgis-js-demo
 
