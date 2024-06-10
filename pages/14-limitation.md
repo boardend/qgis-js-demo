@@ -20,12 +20,3 @@ routeAlias: limitation
   - Blockierung des JS "main" Threads
 
 </div>
-  
-<br />
-
-<div v-click>
-
-- Offene Bugs
-  - Globale Variablen nicht verfügbar (z.B. `@map_scale`)
-
-</div>

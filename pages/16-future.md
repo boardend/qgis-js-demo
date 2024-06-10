@@ -5,9 +5,10 @@ routeAlias: future
 
 # Aktuelle Arbeiten und Ausblick
 
-- Performance-Optimierung
-  - Optimierung der Renderzeit
-  - Progressives Rendering
+- Unterstützung von netzwerkbasierten Formaten und Diensten
+  - Vector Tiles
+  - COG (Cloud Optimized GeoTIFF)
+  - WMTS/WMS/WFS/OGC API 
 
 <br />
 
@@ -16,9 +17,7 @@ routeAlias: future
 
 <br />
 
-- Verbesserungen in QGIS Diagrammen
-  - Kombination von mehreren Typen
-  - Start- und End-Winkel von Kreisdiagrammen
+- Unterstützung von interaktiven Attributabfragen (Feature Infos) on Mouse Click
 
 <br />
 

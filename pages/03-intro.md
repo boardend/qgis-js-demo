@@ -36,8 +36,7 @@ routeAlias: intro
   </p>
 <p>
 
-- Institut für Kartografie und Geoinformation
-  - ETH Zürich
+- Institut für Kartografie und Geoinformation, ETH Zürich
 - Sommer & Herbst 2023
 
 </p>
@@ -46,4 +45,14 @@ routeAlias: intro
     style="width: 13.5rem; right: 0; margin-right: 29rem"
     src="/data/aos_logo_white.png"
   />
+</div>
+<div v-click>
+  <p>
+  Performanceoptimierung, Progressive Rendering
+  </p>
+<p>
+
+- Frühling 2024
+
+</p>
 </div>
