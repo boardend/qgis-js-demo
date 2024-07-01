@@ -31,4 +31,3 @@ hideInToc: true
 - Trennung von logischen und physischen Layern (Zeichenreihenfolge)
 
 </div>
-

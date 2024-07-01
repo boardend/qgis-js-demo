@@ -3,7 +3,7 @@ theme: ./theme
 fonts:
   provider: "none"
 class: text-center
-highlighter: shikiji
+highlighter: shiki
 lineNumbers: false
 drawings:
   persist: false

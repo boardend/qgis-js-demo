@@ -1,3 +1,6 @@
+import { normalizePath } from "vite";
+import path from "node:path";
+
 import { defineConfig } from "vite";
 
 import { viteStaticCopy } from "vite-plugin-static-copy";
@@ -27,10 +30,13 @@ export default defineConfig({
       },
     },
     viteStaticCopy({
-      silent: true,
+      silent: false,
       targets: [
         {
-          src: "node_modules/qgis-js/dist/assets/wasm/**",
+          src:
+            normalizePath(
+              path.resolve(__dirname, "node_modules/qgis-js/dist/assets/wasm"),
+            ) + "/**",
           dest: "assets/wasm",
         },
       ],
@@ -38,7 +44,12 @@ export default defineConfig({
     viteStaticCopy({
       targets: [
         {
-          src: "node_modules/coi-serviceworker/coi-serviceworker.min.js",
+          src: normalizePath(
+            path.resolve(
+              __dirname,
+              "./node_modules/coi-serviceworker/coi-serviceworker.min.js",
+            ),
+          ),
           dest: "",
         },
       ],

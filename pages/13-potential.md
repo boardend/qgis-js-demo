@@ -38,4 +38,3 @@ routeAlias: potential
   - Aktuell aber nicht im Scope von qgis-js
 
 </div>
-

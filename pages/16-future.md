@@ -8,7 +8,7 @@ routeAlias: future
 - Unterstützung von netzwerkbasierten Formaten und Diensten
   - Vector Tiles
   - COG (Cloud Optimized GeoTIFF)
-  - WMTS/WMS/WFS/OGC API 
+  - WMTS/WMS/WFS/OGC API
 
 <br />
 

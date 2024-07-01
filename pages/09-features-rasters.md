@@ -20,7 +20,6 @@ hideInToc: true
 - Selektive und globale Transparenz
 - Hillshading
 
-
 <br />
 <br />
 <br />
@@ -32,4 +31,3 @@ hideInToc: true
   - Public Domain, via Wikimedia Commons
 
 </small>
-

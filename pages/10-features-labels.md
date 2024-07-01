@@ -28,4 +28,3 @@ hideInToc: true
   - Puffer
   - Hintergrund-Grafik (`.svg`, ...)
 - Führungslinien
-

@@ -2,7 +2,8 @@
 
 #slideshow,
 #slideshow > div,
-#slideshow > div div {
+#slideshow > div div,
+#slideshow > div div div {
   pointer-events: none;
 
   * {

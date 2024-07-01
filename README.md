@@ -21,7 +21,7 @@ qgis-js ist eine Portierung von QGIS Core zu WebAssembly um es in modernen Brows
 
 To start the slide show:
 
-- `npm install && (cd theme; npm install)`
+- `npx pnpm install && (cd theme; npx pnpm install)`
 - `npm run dev`
 - visit http://localhost:3030
 
