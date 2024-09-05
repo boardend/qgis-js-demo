@@ -14,10 +14,10 @@ hideInToc: true
 ---
 
 <div class="pt-12 rounded-xl bg-white bg-opacity-85">
-<h1>QGIS im Browser dank WebAssembly</h1>
+<h1>QGIS core ported to WebAssembly to run it on the web platform</h1>
   <span @click="$slidev.nav.next">
-    <h2 style="padding-bottom: 0.5em"><a href="https://github.com/boardend" target="_blank">Michael Schmuki</a> &amp; <a href="https://github.com/andreasneumann" target="_blank">Andreas Neumann</a></h2>
-    <h3>QGIS Anwendertag 2024 @ Bern</h3>
+    <h2 style="padding-bottom: 0.5em"><a href="https://github.com/boardend" target="_blank">Michael Schmuki</a></h2>
+    <h3>QGIS User Conference 2024 @ Bratislava</h3>
   </span>
   <br /><br />
 </div>
