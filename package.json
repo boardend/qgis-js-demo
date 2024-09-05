@@ -25,15 +25,15 @@
     "@qgis-js/ol": "0.0.5",
     "@qgis-js/utils": "0.0.5",
     "ol": "9.2.4",
-    "@slidev/cli": "^0.49.13",
-    "@slidev/client": "^0.49.13",
+    "@slidev/cli": "^0.49.29",
+    "@slidev/client": "^0.49.29",
     "@slidev/theme-default": "^0.25.0",
     "coi-serviceworker": "^0.1.7"
   },
   "devDependencies": {
-    "pnpm": "8.12.1",
-    "vite": "^5.3.2",
-    "prettier": "^3.3.2",
+    "pnpm": "9.9.0",
+    "vite": "^5.4.3",
+    "prettier": "^3.3.3",
     "prettier-plugin-slidev": "^1.0.5"
   }
 }
