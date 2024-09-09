@@ -1,22 +1,22 @@
 ---
-title: Limitationen
+title: Limitations
 routeAlias: limitation
 ---
 
-# Limitationen
+# Limitations
 
-- Netzwerk-Zugriff auf Daten-Provider
-  - COG, WMS/WMTS, Vector-Tiles etc.
-  - PostGIS-Zugriff wohl nur über Proxy
+- Network access to data providers
+  - COG, WMS/WMTS, Vector Tiles, etc.
+  - PostGIS access likely only via proxy
 
 <br />
 
 <div v-click>
 
-- Noch nicht umgesetzt
-  - Selektion und Attributdaten-Abfragen von Features
-  - Einbettung von zusätzlichen Schriftarten
-  - Mobile Support noch nicht in allen Browsern
-  - Blockierung des JS "main" Threads
+- Not yet implemented
+  - Selection and attribute data queries of features
+  - Embedding of additional fonts
+  - Mobile support not yet in all browsers
+  - Blocking of the JS "main" thread
 
 </div>

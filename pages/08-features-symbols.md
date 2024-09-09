@@ -1,25 +1,25 @@
 ---
 layout: image-left
 image: null
-title: Features - Vektordaten & Symbolisierung
+title: Features - Vector Data & Symbolization
 routeAlias: features-symbols
 hideInToc: true
 ---
 
-### Vektordaten & Symbolisierung
+### Vector Data & Symbolization
 
 <br />
 
-- Darstellung von allen QGIS/OGR unterstützten Vektorformaten
+- Display of all vector formats supported by QGIS/OGR
   - `.geojson`, `.gpkg`, `.shp`, ...
 
 <br />
 
 <div v-click>
 
-- QGIS Symbolisierung
+- QGIS Symbolization
   - (SQL) Expressions
-  - Regelbasierte Darstellung
+  - Rule-based rendering
 
 </div>
 
@@ -27,7 +27,7 @@ hideInToc: true
 
 <div v-click>
 
-- Symbolebenen und grafische Effekte
-- Trennung von logischen und physischen Layern (Zeichenreihenfolge)
+- Symbol layers and graphical effects
+- Separation of logical and physical layers (drawing order)
 
 </div>

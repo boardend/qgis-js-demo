@@ -8,23 +8,21 @@ hideInToc: true
 
 ### Labels
 
-- Intelligente Karten-Beschriftung
-  - Verdrängung mit Priorisierung
-- Datendefinierte Eigenschaften
+- Intelligent map labeling
 
-<br />
+  - Displacement with prioritization
 
-- Regelbasierte Labels
+- Data-defined properties
 
-<br />
+- Rule-based labels
 
-- Zahlreiche Platzierungs-Optionen
+- Numerous placement options
 
-<br />
+- Label backgrounds
 
-- Beschriftungs-Hintergründe
-  - Selektive Masken
-  - Schattierung
-  - Puffer
-  - Hintergrund-Grafik (`.svg`, ...)
-- Führungslinien
+  - Selective masks
+  - Shading
+  - Buffers
+  - Background graphics (`.svg`, ...)
+
+- Callouts

@@ -8,15 +8,17 @@ lineNumbers: false
 drawings:
   persist: false
 transition: slide-left
-title: qgis-js - QGIS im Browser dank WebAssembly
+title: qgis-js - QGIS core ported to WebAssembly to run it on the web platform
 mdc: true
 hideInToc: true
 ---
 
 <div class="pt-12 rounded-xl bg-white bg-opacity-85">
-<h1>QGIS core ported to WebAssembly to run it on the web platform</h1>
+<h1>QGIS-JS</h1>
+<h2><b>QGIS core ported to WebAssembly <br />to run it on the web platform</b></h2>
+<br />
   <span @click="$slidev.nav.next">
-    <h2 style="padding-bottom: 0.5em"><a href="https://github.com/boardend" target="_blank">Michael Schmuki</a></h2>
+    <h3 style="padding-bottom: 0.5em"><a href="https://github.com/boardend" target="_blank">Michael Schmuki</a>, <a href="https://opengis.ch/" target="_blank">OPENGIS.ch</a></h3>
     <h3>QGIS User Conference 2024 @ Bratislava</h3>
   </span>
   <br /><br />
@@ -39,7 +41,7 @@ image:
 hideInToc: true
 ---
 
-# Inhalt
+# Content
 
 <Toc maxDepth="1"></Toc>
 
@@ -106,18 +108,18 @@ class: text-center
 hideInToc: true
 ---
 
-# Vielen Dank für Ihre Aufmerksamkeit!
+# Many Thanks for Your Attention!
 
-<a href="https://github.com/boardend" target="_blank">Michael Schmuki</a> &amp; <a href="https://github.com/andreasneumann" target="_blank">Andreas Neumann</a>
+<a href="https://github.com/boardend" target="_blank">Michael Schmuki</a>, michael@opengis.ch
 
 <br />
 
 **qgis-js** Website: [https://qgis.github.io/qgis-js](https://qgis.github.io/qgis-js/)
 
-**qgis-js** auf GitHub: [https://github.com/qgis/qgis-js](https://github.com/qgis/qgis-js)
+**qgis-js** on GitHub: [https://github.com/qgis/qgis-js](https://github.com/qgis/qgis-js)
 
-**qgis-js** auf npm: [https://www.npmjs.com/package/qgis-js](https://www.npmjs.com/package/qgis-js)
+**qgis-js** on npm: [https://www.npmjs.com/package/qgis-js](https://www.npmjs.com/package/qgis-js)
 
 <br /><br />
 
-**Interaktive Slides**: [https://boardend.github.io/qgis-js-demo](https://boardend.github.io/qgis-js-demo/)
+**Interactive Slides**: [https://boardend.github.io/qgis-js-demo](https://boardend.github.io/qgis-js-demo/)

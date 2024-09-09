@@ -1,27 +1,27 @@
 ---
-title: Was ist qgis-js?
+title: What is qgis-js?
 routeAlias: qgis-js
 ---
 
-# Was ist qgis-js?
+# What is qgis-js?
 
-- QGIS Core portiert zu WebAssembly, um es auf der Web-Platform zu nutzen
+- QGIS Core ported to WebAssembly to use it on the web platform
 - JavaScript/TypeScript API
 
-  - Laden von QGIS Projekten
-  - Rendering von Karten (Projektion, Extent, Auflösung)
-  - Interaktion mit Layern (Visibility, Opacity, ...) und Map-Themes
+  - Loading QGIS projects
+  - Rendering maps (projection, extent, resolution)
+  - Interaction with layers (visibility, opacity, ...) and map themes
 
-- OpenLayers Integration als separates npm Package
+- OpenLayers integration as a separate npm package
 
 <br />
 
 <div v-click>
 
-<h1>Was ist qgis-js nicht?</h1>
+<h1>What is qgis-js not?</h1>
 
-- Keine 1:1 Portierung von QGIS Desktop
-  - Kein GUI, Processing, 3D, Python/PyQGIS Support
+- Not a 1:1 port of QGIS Desktop
+  - No GUI, Processing, 3D, Python/PyQGIS support
 
 </div>
 

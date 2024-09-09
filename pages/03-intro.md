@@ -5,7 +5,7 @@ title: Intro
 routeAlias: intro
 ---
 
-### Alles begann in ’s-Hertogenbosch
+### It all began in ’s-Hertogenbosch
 
 <br />
 
@@ -32,12 +32,12 @@ routeAlias: intro
 
 <div v-click>
   <p>
-  Machbarkeitsstudie für den <b>Atlas der Schweiz</b>
+  Feasibility study for the <b>Atlas of Switzerland</b>
   </p>
 <p>
 
-- Institut für Kartografie und Geoinformation, ETH Zürich
-- Sommer & Herbst 2023
+- Institute of Cartography and Geoinformation, ETH Zurich
+- Summer & Fall 2023
 
 </p>
   <img
@@ -47,12 +47,8 @@ routeAlias: intro
   />
 </div>
 <div v-click>
-  <p>
-  Performanceoptimierung, Progressive Rendering
-  </p>
-<p>
-
-- Frühling 2024
-
-</p>
+  <ul>
+    <li>Performance &amp; Progressive Rendering</li>
+    <li>Spring 2024</li>
+  </ul>
 </div>
