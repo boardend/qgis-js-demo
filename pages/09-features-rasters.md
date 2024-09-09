@@ -6,18 +6,18 @@ routeAlias: features-rasters
 hideInToc: true
 ---
 
-### Rasterdaten
+### Raster Data
 
 <br />
 
-- Darstellung von allen in GDAL unterstützten Rasterformaten
+- Display of all raster formats supported by GDAL
 
 <br />
 
-- Diverse Rendering-Effekte
+- Various rendering effects
   - Blending (Multiply, Darken, etc.)
-  - Einfärbung, Kontrast, etc.
-- Selektive und globale Transparenz
+  - Coloring, contrast, etc.
+- Selective and global transparency
 - Hillshading
 
 <br />
@@ -26,8 +26,8 @@ hideInToc: true
 
 <small>
 
-- Quelle
-  - [Karte von Hamburg während der französischen Besatzung 1813/1814](https://commons.wikimedia.org/wiki/File:Hamburg.Karte.1813_neddermeyer_300dpi.jpg)
+- Source
+  - [Map of Hamburg during the French occupation 1813/1814](https://commons.wikimedia.org/wiki/File:Hamburg.Karte.1813_neddermeyer_300dpi.jpg)
   - Public Domain, via Wikimedia Commons
 
 </small>

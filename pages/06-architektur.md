@@ -1,8 +1,8 @@
 ---
-title: Architektur
+title: Architecture
 routeAlias: architektur
 ---
 
-# Architektur
+# Architecture
 
 <img src="/data/architecture.drawio.svg" style="margin: 1em" />

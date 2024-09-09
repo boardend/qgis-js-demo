@@ -7,7 +7,7 @@ routeAlias: potential
 
 <div v-click>
 
-- Dynamische Web-Karten auf höchstem kartographischen Niveau
+- Dynamic web maps at the highest cartographic level
 
 </div>
 
@@ -15,8 +15,8 @@ routeAlias: potential
 
 <div v-click>
 
-- QGIS Karten ohne QGIS-Server (Kosten)
-  - Betrachtung von lokalen Projekten/Daten ohne Übermittlung an einen Server
+- QGIS maps without QGIS server (cost)
+  - Viewing local projects/data without sending them to a server
 
 </div>
 
@@ -24,9 +24,9 @@ routeAlias: potential
 
 <div v-click>
 
-- QGIS Internals per JavaScript
-  - Dynamische Projekte, Layer und Daten
-  - Längerfristig auch Editier- und Analysefunktionen
+- QGIS internals via JavaScript
+  - Dynamic projects, layers, and data
+  - Long-term also editing and analysis functions
 
 </div>
 
@@ -34,7 +34,8 @@ routeAlias: potential
 
 <div v-click>
 
-- PyQGIS, GUI, etc., technisch auch im Browser denkbar
-  - Aktuell aber nicht im Scope von qgis-js
+- PyQGIS, GUI, etc.
+  - Currently not within the scope of qgis-js
+  - But technically possible in the browser
 
 </div>

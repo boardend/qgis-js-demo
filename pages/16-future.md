@@ -1,23 +1,23 @@
 ---
-title: Aktuelle Arbeiten und Ausblick
+title: Current Work and Outlook
 routeAlias: future
 ---
 
-# Aktuelle Arbeiten und Ausblick
+# Current Work and Outlook
 
-- Unterstützung von netzwerkbasierten Formaten und Diensten
+- Support for network-based formats and services
   - Vector Tiles
   - COG (Cloud Optimized GeoTIFF)
   - WMTS/WMS/WFS/OGC API
 
 <br />
 
-- Erweiterung der qgis-js TypeScript API
-  - Dynamische Karten per JS
+- Extension of the qgis-js TypeScript API
+  - Dynamic maps via JS
 
 <br />
 
-- Unterstützung von interaktiven Attributabfragen (Feature Infos) on Mouse Click
+- Support for interactive attribute queries (Feature Infos) on mouse click
 
 <br />
 

@@ -1,7 +1,6 @@
 import { QgisContext } from "./global-qgis";
 
 import { cities } from "./data/cities";
-import { c } from "vite/dist/node/types.d-FdqQ54oU";
 
 interface SlideInteractions {
   onEnter?: (QgisContext, number) => void | ((QgisContext, number) => void)[];
