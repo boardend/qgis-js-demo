@@ -4,12 +4,19 @@ This repository contains a [Slidev](https://sli.dev/) slideshow for demonstratin
 
 ## Talks
 
+### Karten/GIS/Geo-Meetup 30.10.24: [qgis-js](https://github.com/qgis/qgis-js) - QGIS im Browser dank WebAssembly (DE)
+
+- **Talk @ Karten/GIS/Geo-Meetup**
+  - 30.10.24 , 18:00–21:00 (Europe/Berlin)
+    - Bernhard-Nocht-Institut für Tropenmedizin (BNITM), Hamburg
+  - <a href="https://github.com/boardend" target="_blank">Michael Schmuki</a>
+
 ### QGIS User Conference 2024: [qgis-js](https://github.com/qgis/qgis-js) - QGIS core ported to WebAssembly to run it on the web platform (EN)
 
 - **Talk @ [QGIS User Conference 2024 - Bratislava](https://uc2024.qgis.sk/)**
   - 09.09.2024, 11:30–12:00 (Europe/Berlin)
     - B316 (BAT), Faculty of Civil Engineering at Slovak University of Technology
-  - <a href="https://github.com/boardend" target="_blank">Michael Schmuki</a> 
+  - <a href="https://github.com/boardend" target="_blank">Michael Schmuki</a>
 
 > **Session**: https://talks.osgeo.org/qgis-uc2024/talk/78G3TY/
 
@@ -19,7 +26,6 @@ This repository contains a [Slidev](https://sli.dev/) slideshow for demonstratin
   - 11.06.2024, 10:00–10:20 (Europe/Berlin)
     - S 003, Universität Bern
   - <a href="https://github.com/boardend" target="_blank">Michael Schmuki</a> &amp; <a href="https://github.com/andreasneumann" target="_blank">Andreas Neumann</a>
-
 
 ### FOSSIGS 2024: [qgis-js](https://github.com/qgis/qgis-js) - QGIS im Browser dank WebAssembly (DE)
 
