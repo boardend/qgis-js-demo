@@ -31,7 +31,7 @@
   "homepage": "https://sli.dev",
   "bugs": "https://github.com/slidevjs/themes/issues",
   "dependencies": {
-    "@slidev/types": "^0.49.29",
+    "@slidev/types": "^52.14.1",
     "codemirror-theme-vars": "^0.1.2",
     "prism-theme-vars": "^0.2.5",
     "theme-vitesse": "^0.8.3"

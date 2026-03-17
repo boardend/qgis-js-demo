@@ -17,6 +17,7 @@
 
 <script setup lang="ts">
 import { ref, onMounted, watchEffect } from "vue";
+import { useNav } from "@slidev/client";
 
 import { qgis } from "qgis-js";
 
@@ -37,6 +38,8 @@ import { context, setRuntime, setMap, setExtents } from "../../global-qgis";
 import { interactions, globalInteractions } from "../../global-interactions";
 
 import { cities } from "../../data/cities";
+
+const nav = useNav();
 
 const map = ref(null);
 
@@ -74,15 +77,15 @@ function onLeave(slide: number) {
 
 const lastPage = ref(null);
 watchEffect(() => {
-  if (lastPage.value != $slidev.nav.currentPage) {
+  if (lastPage.value != nav.currentPage.value) {
     if (lastPage.value) {
       onLeave(lastPage.value);
     }
-    if ($slidev.nav.currentPage) {
-      onEnter($slidev.nav.currentPage);
+    if (nav.currentPage.value) {
+      onEnter(nav.currentPage.value);
     }
   }
-  lastPage.value = $slidev.nav.currentPage;
+  lastPage.value = nav.currentPage.value;
 });
 
 onMounted(async () => {
@@ -186,8 +189,8 @@ onMounted(async () => {
   setMap(ol);
 
   setTimeout(() => {
-    if ($slidev.nav.currentPage && $slidev.nav.currentPage != 1) {
-      onEnter($slidev.nav.currentPage);
+    if (nav.currentPage.value && nav.currentPage.value != 1) {
+      onEnter(nav.currentPage.value);
     }
   }, 100);
 });

@@ -8,7 +8,7 @@
     "dev": "slidev",
     "export": "slidev export",
     "preview": "vite preview --base /qgis-js-demo/",
-    "update": "pnpm update"
+    "update": "pnpm update -r"
   },
   "slidev": {
     "colorSchema": "light",
@@ -21,19 +21,19 @@
     }
   },
   "dependencies": {
-    "qgis-js": "0.0.5",
-    "@qgis-js/ol": "0.0.5",
-    "@qgis-js/utils": "0.0.5",
-    "ol": "9.2.4",
-    "@slidev/cli": "^0.49.29",
-    "@slidev/client": "^0.49.29",
+    "qgis-js": "4.0.0",
+    "@qgis-js/ol": "4.0.0",
+    "@qgis-js/utils": "4.0.0",
+    "ol": "10.8.0",
+    "@slidev/cli": "^52.14.1",
     "@slidev/theme-default": "^0.25.0",
     "coi-serviceworker": "^0.1.7"
   },
   "devDependencies": {
-    "pnpm": "9.9.0",
-    "vite": "^5.4.3",
-    "prettier": "^3.3.3",
+    "pnpm": "10.32.1",
+    "vite": "^7.3.1",
+    "vite-plugin-static-copy": "^3.3.0",
+    "prettier": "^3.8.1",
     "prettier-plugin-slidev": "^1.0.5"
   }
 }

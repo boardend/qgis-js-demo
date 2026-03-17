@@ -13,13 +13,11 @@ routeAlias: intro
   <p>
     QGIS User Conference, April 2023
   </p>
-<p>
 
 - Martin Dobias
 - Michael Schmuki
 - Andreas Neumann
 
-</p>
   <img
     class="absolute top-27"
     style="width: 13.5rem; right: 0; margin-right: 29rem"
@@ -34,12 +32,10 @@ routeAlias: intro
   <p>
   Feasibility study for the <b>Atlas of Switzerland</b>
   </p>
-<p>
 
 - Institute of Cartography and Geoinformation, ETH Zurich
 - Summer & Fall 2023
 
-</p>
   <img
     class="absolute bottom-17"
     style="width: 13.5rem; right: 0; margin-right: 29rem"
